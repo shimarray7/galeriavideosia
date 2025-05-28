@@ -19,7 +19,11 @@
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <!-- Seu código React aqui (igual ao que você já tem) -->
   // Substitua pelos seus dados do Google Cloud
-  const CLIENT_ID = 'SUA_CLIENT_ID.apps.googleusercontent.com';
+  
+  <!-- ... -->
+  <!-- CÓDIGO DE INTEGRAÇÃO COM GOOGLE SHEETS ABAIXO -->
+  <script>
+     const CLIENT_ID = 'SUA_CLIENT_ID.apps.googleusercontent.com';
   const API_KEY = 'SUA_API_KEY';
   const DISCOVERY_DOCS = [
   "https://sheets.googleapis.com/$discovery/rest?version=v4"
@@ -27,7 +31,7 @@
 const SCOPES = "https://www.googleapis.com/auth/spreadsheets";
 
 // ID da sua planilha (pegue na URL do Google Sheets)
-const SPREADSHEET_ID = 'SEU_SPREADSHEET_ID';
+const SPREADSHEET_ID = '1pt2V3fGNvDH004nwxS_stpJSyysCCzgUdU0FRWokZrU';
 
 // Inicializa a API Google quando a página carrega
 window.onload = function() {
@@ -96,11 +100,6 @@ function adicionarVideo() {
     listarVideos();
   });
 }
-  
-  <!-- ... -->
-  <!-- CÓDIGO DE INTEGRAÇÃO COM GOOGLE SHEETS ABAIXO -->
-  <script>
-    // Veja a próxima seção!
   </script>
 </body>
 </html>
